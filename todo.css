@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+    position: relative;
+    width: 50vw;
+    background-color: cyan;
+    border-radius: 10px;
+    top: 10vh;
+    left: 25vw;
+}
+.title{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+}
+.title img{
+    width: 40px;
+    height: 40px;
+}
+
+.input{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.input input{
+    width: 70%;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    padding:10px ;
+    
+}
+
+.input button{
+    width: 20%;
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 20px;
+    font-size:20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.task ul{
+    width: 100%;
+    padding: 30px;
+    list-style: none;
+    position: relative;
+    font-size: 20px;
+}
+
+.task ul li{
+    padding: 10px;
+    width: 100%;
+}
+
+.task ul li::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    left: 10px;
+}
+.chacked{
+    text-decoration:line-through red;
+
+}
+
+.chacked::before{
+    background: url("image/blue-check-mark-vector-illustration-600nw-2183066365.jpg.webp");
+    background-size: cover;
+}
+
+ul li span{
+    position: absolute;
+    right: 120px;
+    cursor: pointer;
+    font-size:20px ;
+    padding: 0px 5px 0px 5px;
+}
+
+ul li span:hover{
+    background-color:rgb(255, 82, 82);
+    border-radius: 50%;
+}
